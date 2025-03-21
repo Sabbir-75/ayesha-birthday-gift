@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wish</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffebcd;
+        }
+
+        #message {
+            font-size: 24px;
+            color: #ff4500;
+            margin-top: 50px;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 10px;
+            background-color: #ff69b4;
+            border: none;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #ff1493;
+        }
+        .image{
+            margin-bottom: 5px;
+        width: 200px;
+        height: 150px;
+        margin: 0 auto;
+        }
+        .image img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+   
+    <h1>Click the Button for Your Birthday Surprise Bristy AFA!</h1>
+    <button onclick="showWish()">🎂 আফা ক্লিক করো 🎉</button>
+    <p id="message"></p>
+
+    <script>
+        function showWish() {
+
+            let name = prompt("Enter the birthday person's name:");
+            if (name === "Bristy") {
+                if (name) {
+                    document.getElementById("message").innerHTML =
+                        `🎉 Happy Birthday, ${name} AFA ! 🎂🎈 Have a fantastic day For you! 🎁🎊
+                         <br><div class="image">
+                         <img src="red white yellow gift minimalist Happy birthday paper note document A4.png" alt="gift">
+                         </div>
+                        `;
+                } else {
+                    document.getElementById("message").innerHTML =
+                        "🎉 Happy Birthday! 🎂🎈 Have a fantastic day! 🎁🎊";
+                }
+            }
+
+
+        }
+    </script>
+
+</body>
+
+</html>
